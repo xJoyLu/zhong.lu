@@ -2,7 +2,7 @@
  * @Author: 卢东东 xjoylu@gmail.com
  * @Date: 2022-11-10 16:16:15
  * @LastEditors: 卢东东 xjoylu@gmail.com
- * @LastEditTime: 2022-11-10 16:27:09
+ * @LastEditTime: 2022-11-11 17:00:09
  * @FilePath: /zhong.lu/scripts/sites.js
  * @Description: 偷懒界翘楚
  * @Bio：https://L.Lcc.cc
@@ -17,4 +17,5 @@
 const sites = [
     {url:"https://ldd.cc", title:"卢东东", type:"Website", contact:"xjoylu@gmail.com", rss:"https://ldd.cc/rss"},
     {url:"https://lcc.cc/sunny", title:"Sunny.H", type:"Blog", contact:"233hjs@gmail.com"},
+    {url:"https://www.guofei.site/", title:"郭飞", type:"Follow"},
 ];
