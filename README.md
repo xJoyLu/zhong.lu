@@ -1,44 +1,77 @@
-# Makers Union - 创作者联盟
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/fre123-com/fre123-info-flow@main/.files/logo.png" width="100" height="100">
+</p>
+<h1 align="center">Fre123 Nav</h1>
 
-> 没有人是一座孤岛，在茫茫大海里独踞。—— 约翰·多恩
+> 👀 一键搭建自定义导航网站，简洁优雅，你值得拥有
 
-[Makers Union - 创作者联盟](https://union.zhaodao.ai) 是 [找到AI](https://zhaodao.ai) 发起的致力于构建更加繁荣的互联网创作生态的流量共享项目，衍生于 [WebRing](https://wiki.xxiivv.com/webring) ，我们期望中国本土的创作者可以共同“戴上” Makers Union - 创作者联盟指环，以共享彼此的流量（访客在点击联盟成员网站的指环按钮后，会随机跳转到联盟成员集合中的某一站点）。欢迎更多优秀的中国创作者加入我们的联盟；）
+在线体验：
 
-如果你是一位创作者且拥有一个网站，请提交一个 [Pull Request](https://github.com/zhaodaoai/Makers-Union#如何加入创作者联盟)，同时我们也欢迎任何可以帮助创作者创作的工具类、内容类的网站加入。
+- FRE123 导航：[https://www.fre123.com](https://www.fre123.com)
+- FRE123 信息流：开源地址 👉 https://github.com/fre123-com/fre123-info-flow
+  - 技术周刊精选：[https://www.fre123.com/weekly](https://www.fre123.com/weekly)
+  - 全网热点资讯：[https://www.fre123.com/news](https://www.fre123.com/news)
+  - 技术热点资讯：[https://www.fre123.com/tech](https://www.fre123.com/tech)
 
-如果你发现了有链接错误，请 [告知我们](https://github.com/zhaodaoai/Makers-Union/issues/new/choose)。
+## 特性
 
-## 如何加入创作者联盟？
+![Fre123 Nav](https://cdn.jsdelivr.net/gh/fre123-com/fre123-nav@main/.files/images/index.jpg)
 
-0，确保你要提交的网站是发表创作的，包括但不限于书、博客、文章、电影、音乐、播客、软件、硬件等 [作品](https://zh.wikipedia.org/wiki/%E4%BD%9C%E5%93%81)。
+项目特点：
 
-1，添加联盟指环图标到你的网站，示例代码如下。建议添加联盟图标到 footer 社交媒体位置，见 [示例](https://zhaodao.ai/p/62)。你也可自行托管图标文件，或自定义 width 及 height。
+- 简洁易用：界面简洁易用，支持一键部署
+- 拓展方便：导航数据完全由用户自定义控制
+- 技术支持：底部关注公众号加交流群
 
-> 如果你的网站是黑色背景，可以选用 [`icon.white.svg`](https://union.zhaodao.ai/icon.white.svg)。
-> 如果你的网站使用了阿里等矢量图标库，可以下载描边填充后的 [`makers-union.svg`](https://union.zhaodao.ai/makers-union.svg) 并上传到自己的图标库调用。
+## 部署 
 
-
-```
-<a href='https://union.zhaodao.ai/#random' target='_blank'><img src='https://union.zhaodao.ai/icon.black.svg' width="25" height="25"></a>
-```
-
-2，Fork 本项目，添加你的网站信息到 [sites.js](https://github.com/zhaodaoai/Makers-Union/edit/master/scripts/sites.js) 文件。 `url` 值为必填，你可以选填 `title`, `type`, `author`, `contact`, 或 `rss`。
-
-3，提交一个 Pull Request，并在 PR 的描述中 **注明你的页面添加网络指环图标的位置**，并等待管理员合并。（本项目使用 GitHub Pages 服务托管，在管理员合并你的代码后，一般会在 10min 左右更新上线） 
-
-
-**单页面网站，纯社交网络聚合站点将被拒绝合并**
-
-
-### 循环链接（可选）
-
-如果你期望跳转到联盟指环的下一个链接，可以通过在请求网址的 # 后添加你的网站域名，如：
+本项目使用 `node v18.16.0` 版本环境 `yarn`作为包管理工具
 
 ```
-<a href='https://union.zhaodao.ai/#zhaodao.ai' target='_blank' rel="noopener noreferrer"><img src='https://union.zhaodao.ai/icon.white.svg' width="25" height="25"></a>
+git clone https://github.com/fre123-com/fre123-nav.git
+
+# 安装依赖
+cd fre123-nav
+yarn install
+
+# 数据配置，具体见下方，配置成功后启动服务
+# 启动成功，访问 http://localhost:3000 
+yarn dev
 ```
 
+具体配置见：[数据配置](./.files/docs/config.md)，推荐基于 [Vercel](https://vercel.com/new/clone?repository-url=https://github.com/fre123-com/fre123-nav&project-name=fre123-nav&repository-name=fre123-nav&demo-title=fre123-nav&demo-description=fre123-nav&demo-url=https%3A%2F%2Ffre123.com) 一键部署：👇
 
-## 需要帮忙吗？
+- [Fork](https://github.com/fre123-com/fre123-nav/fork) 本项目
+- 编辑 Fork 后项目根目录下 `config` 下相关配置文件，进行 [FRE123 数据配置](./.files/docs/config.md)
+- 基于 Vercel 一键部署
 
-如果你看不懂以上代码或指引，可发邮件至 ray#zhaodao.ai (# 改为 @) 寻求帮助。本项目由 [Ray](https://github.com/tvvocold) 维护，我们欢迎更多人参与并贡献这个项目。
+详细配置教程：[开源! 普通人如何快速免费搭建个性化导航网站](https://mp.weixin.qq.com/s/NEqY1Qb4dyJDhdtlYxjmaA)。还不懂？直接加[老胡的储物柜](https://cdn.jsdelivr.net/gh/fre123-com/fre123-info-flow@main/.files/wechat.jpeg) 沟通咨询。
+
+## QA
+
+> 为什么要做这个项目？
+
+详情见：[FRE123 启动计划](https://mp.weixin.qq.com/s/6El2AW93K4RiEHhma3vVPg)
+
+> 我可以提交我搭建的导航网站吗？
+
+可以，欢迎任何人分享自己搭建的导航网站，具体见：[Fre123 导航网站提交指南](https://www.fre123.com/pub_nav)，有任何问题欢迎加我微信沟通。
+
+> 有资源共享群么？
+
+有的，同上联系老胡后拉你进群，本群都是热爱分享的朋友，只想潜水勿进，谢谢
+
+## 说明
+
+欢迎加入我们的交流群，一起交流学习：
+
+- 关注公众号：[老胡的储物柜](https://cdn.jsdelivr.net/gh/fre123-com/fre123-info-flow@main/.files/wechat.jpeg)
+- 回复 `加群` 即可加入我们的交流群
+
+该项目由 `FRE123` 团队维护，如果您在使用该项目时遇到任何问题，请随时提交 `issue` 或联系我们。
+
+技术交流群🤖：
+
+<p align="center">
+  <img src=".files/images/w_group.jpg" width="50%">
+</p>
