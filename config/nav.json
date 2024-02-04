@@ -444,6 +444,27 @@
 		]
 	},
 	{
+		"group_name": "中路导航",
+		"style": 1,
+		"style_des": "标准风格",
+		"tab_list": [
+			{
+				"tab_name": "导航链接",
+				"upper_right_corner": {},
+				"details": [
+					{
+						"title": "有趣网址之家",
+						"url": "https://youquhome.com/",
+						"icon": "https://www.google.com/s2/favicons?domain=https://youquhome.com/",
+						"description": "收藏全球最有趣的网站",
+						"suffix": false,
+						"is_show": true
+					}
+				]
+			}
+		]
+	},
+	{
 		"group_name": "影视资源",
 		"style": 1,
 		"style_des": "标准风格",
